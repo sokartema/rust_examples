@@ -2,6 +2,7 @@ mod custom_types;
 mod primitives;
 mod variable_bindings;
 
+// Some fancy way to get the name of the function with the module and call it
 fn get_function_name_and_call<F>(fun: F)
 where
     F: Fn(),
