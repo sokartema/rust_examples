@@ -1,5 +1,7 @@
+mod conversion;
 mod custom_types;
 mod primitives;
+mod r_types;
 mod variable_bindings;
 
 // Some fancy way to get the name of the function with the module and call it
@@ -28,4 +30,15 @@ fn main() {
     get_function_name_and_call(variable_bindings::scope_and_shadowing);
     get_function_name_and_call(variable_bindings::declare_first);
     get_function_name_and_call(variable_bindings::freezing);
+
+    println!("-- TYPES --");
+    get_function_name_and_call(r_types::casting);
+    get_function_name_and_call(r_types::literals);
+    get_function_name_and_call(r_types::inference);
+    get_function_name_and_call(r_types::aliasing);
+
+    println!("-- CONVERSION --");
+    get_function_name_and_call(conversion::from_and_into);
+    get_function_name_and_call(conversion::try_from_and_try_into);
+    get_function_name_and_call(conversion::to_string_and_parse);
 }
