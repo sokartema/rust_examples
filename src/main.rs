@@ -1,5 +1,6 @@
 mod custom_types;
 mod primitives;
+mod variable_bindings;
 
 fn get_function_name_and_call<F>(fun: F)
 where
@@ -17,4 +18,13 @@ fn main() {
 
     println!("-- CUSTOM_TYPES --");
     get_function_name_and_call(custom_types::structs);
+    get_function_name_and_call(custom_types::enums);
+    get_function_name_and_call(custom_types::consts);
+
+    println!("-- VARIABLE BINDINGS --");
+    get_function_name_and_call(variable_bindings::intro);
+    get_function_name_and_call(variable_bindings::mutability);
+    get_function_name_and_call(variable_bindings::scope_and_shadowing);
+    get_function_name_and_call(variable_bindings::declare_first);
+    get_function_name_and_call(variable_bindings::freezing);
 }
