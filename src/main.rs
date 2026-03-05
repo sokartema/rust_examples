@@ -1,5 +1,6 @@
 mod conversion;
 mod custom_types;
+mod flow_of_control;
 mod primitives;
 mod r_types;
 mod variable_bindings;
@@ -41,4 +42,11 @@ fn main() {
     get_function_name_and_call(conversion::from_and_into);
     get_function_name_and_call(conversion::try_from_and_try_into);
     get_function_name_and_call(conversion::to_string_and_parse);
+
+    println!("-- FLOW OF CONTROL --");
+    get_function_name_and_call(flow_of_control::if_else);
+    get_function_name_and_call(flow_of_control::loop_example);
+    get_function_name_and_call(flow_of_control::while_loop);
+    get_function_name_and_call(flow_of_control::for_range);
+    get_function_name_and_call(flow_of_control::match_example);
 }
