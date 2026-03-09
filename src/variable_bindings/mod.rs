@@ -1,3 +1,8 @@
+// ============================================================
+// Variable Bindings in Rust
+// Based on: https://doc.rust-lang.org/rust-by-example/variable_bindings.html
+// ============================================================
+//
 pub fn intro() {
     let an_integer = 1u32;
     let a_boolean = true;

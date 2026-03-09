@@ -1,3 +1,8 @@
+// ============================================================
+// Primitives in Rust
+// Based on: https://doc.rust-lang.org/rust-by-example/primitives.html
+// ============================================================
+//
 use std::fmt::Display;
 
 pub fn literals_operators() {

@@ -1,6 +1,7 @@
 mod conversion;
 mod custom_types;
 mod flow_of_control;
+mod functions;
 mod primitives;
 mod r_types;
 mod variable_bindings;
@@ -49,4 +50,11 @@ fn main() {
     get_function_name_and_call(flow_of_control::while_loop);
     get_function_name_and_call(flow_of_control::for_range);
     get_function_name_and_call(flow_of_control::match_example);
+
+    println!("-- FUNCTIONS --");
+    get_function_name_and_call(functions::basic_functions);
+    get_function_name_and_call(functions::methods);
+    get_function_name_and_call(functions::closures);
+    get_function_name_and_call(functions::higher_order_functions);
+    get_function_name_and_call(functions::diverging_functions);
 }
