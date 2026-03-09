@@ -1,3 +1,8 @@
+// ============================================================
+// Types in Rust
+// Based on: https://doc.rust-lang.org/rust-by-example/types.html
+// ============================================================
+//
 // Suppress all warnings from casts which overflow.
 #![allow(overflowing_literals)]
 

@@ -1,3 +1,8 @@
+// ============================================================
+// Conversion in Rust
+// Based on: https://doc.rust-lang.org/rust-by-example/conversion.html
+// ============================================================
+//
 use std::convert::From;
 
 #[allow(dead_code)]

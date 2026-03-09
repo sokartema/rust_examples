@@ -1,3 +1,8 @@
+// ============================================================
+// Custom Types in Rust
+// Based on: https://doc.rust-lang.org/rust-by-example/custom_types.html
+// ============================================================
+//
 // An attribute to hide warnings for unused code.
 #![allow(dead_code)]
 
